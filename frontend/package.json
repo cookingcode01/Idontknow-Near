@@ -1,0 +1,76 @@
+{
+  "name": "@idk.finance/app",
+  "version": "1.0.0",
+  "license": "(MIT AND Apache-2.0)",
+  "scripts": {
+    "start": "npm run clean && source ../contract/neardev/dev-account.env && ./start.sh",
+    "build": "npm run clean && parcel build index.html --public-url ./",
+    "clean": "rimraf dist/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@types/node": "^18.6.2",
+    "ava": "^4.2.0",
+    "cross-env": "^7.0.3",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.16",
+    "parcel": "^2.6.0",
+    "process": "^0.11.10",
+    "react-test-renderer": "^18.1.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "@near-wallet-selector/core": "^7.0.0",
+    "@near-wallet-selector/ledger": "^7.0.0",
+    "@near-wallet-selector/math-wallet": "^7.0.0",
+    "@near-wallet-selector/meteor-wallet": "^7.0.0",
+    "@near-wallet-selector/modal-ui": "^7.0.0",
+    "@near-wallet-selector/my-near-wallet": "^7.0.0",
+    "@near-wallet-selector/near-wallet": "^7.0.0",
+    "@near-wallet-selector/nightly": "^7.0.0",
+    "@near-wallet-selector/nightly-connect": "^7.0.0",
+    "@near-wallet-selector/sender": "^7.0.0",
+    "@near-wallet-selector/wallet-connect": "^7.0.0",
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "@visx/axis": "^2.12.2",
+    "@visx/brush": "^2.12.2",
+    "@visx/curve": "^2.1.0",
+    "@visx/event": "^2.6.0",
+    "@visx/gradient": "^2.10.0",
+    "@visx/grid": "^2.12.2",
+    "@visx/mock-data": "^2.1.2",
+    "@visx/pattern": "^2.10.0",
+    "@visx/responsive": "^2.10.0",
+    "@visx/scale": "^2.2.2",
+    "@visx/shape": "^2.12.2",
+    "@visx/tooltip": "^2.10.0",
+    "bignumber.js": "^9.1.0",
+    "constate": "^3.3.2",
+    "mem": "^9.0.2",
+    "near-api-js": "^0.44.2",
+    "next-themes": "^0.2.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "regenerator-runtime": "^0.13.9",
+    "timeago.js": "^4.0.2"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
